@@ -9,4 +9,4 @@ def excluir_pet(lista_pets):
             print(f"Sucesso! {nome} foi excluído do sistema!")
             return
 
-    print("Pet não encontrado.")g
+    print("Pet não encontrado.")
