@@ -37,3 +37,11 @@ def atualizar_usuario(id_usuario, nome, email, telefone):
             print("Usuário atualizado com sucesso!")
             return
     print("Usuário não encontrado")
+
+def deletar_usuario(id_usuario):
+    for u in usuarios:
+        if u["id"] == id_usuario:
+            usuarios.remove(u)
+            print("Usuário deletado com sucesso!")
+            return
+    print("Usuário não encontrado")
