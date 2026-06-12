@@ -1,3 +1,6 @@
+usuarios = []
+id_atual = 1
+
 def criar_usuario(nome, email, telefone):
     global id_atual
 
@@ -45,3 +48,23 @@ def deletar_usuario(id_usuario):
             print("Usuário deletado com sucesso!")
             return
     print("Usuário não encontrado")
+
+# TESTES
+
+criar_usuario("Lucas Silva", "lucas@email.com", "449999999")
+criar_usuario("Maria Souza", "maria@email.com", "448888888")
+
+print("\nLISTAR:")
+listar_usuarios()
+
+print("\nBUSCAR ID 1:")
+buscar_usuario(1)
+
+print("\nATUALIZAR ID 1:")
+atualizar_usuario(1, "Lucas Santos", "lucas@novo.com", "441111111")
+
+print("\nDELETAR ID 2:")
+deletar_usuario(2)
+
+print("\nLISTA FINAL:")
+listar_usuarios()
