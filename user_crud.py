@@ -28,3 +28,12 @@ def buscar_usuario(id_usuario):
             return
     print("Usuário não encontrado")
 
+def atualizar_usuario(id_usuario, nome, email, telefone):
+    for u in usuarios:
+        if u["id"] == id_usuario:
+            u["nome"] = nome
+            u["email"] = email
+            u["telefone"] = telefone
+            print("Usuário atualizado com sucesso!")
+            return
+    print("Usuário não encontrado")
